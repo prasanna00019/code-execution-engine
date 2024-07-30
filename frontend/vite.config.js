@@ -10,7 +10,6 @@ export default defineConfig({
       '/api':{
         target:"https://code-exec-backend.onrender.com",
         changeOrigin:true,
-        secure:false,
       }
     }
   }
