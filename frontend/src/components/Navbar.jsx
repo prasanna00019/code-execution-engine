@@ -9,8 +9,6 @@ import UseLogout from '../hooks/UseLogout';
 import { useAuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import ProblemBar from './ProblemBar';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 // import { isLoading, run_all_testcases } from '../tester';
 import { useTestCaseRunner } from '../tester';
 
