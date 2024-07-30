@@ -5,10 +5,10 @@ import dotenv from "dotenv"
 dotenv.config();
 import path from "path"
 import { fileURLToPath } from "url";
-import authRoutes from "./src/routes/AuthRoutes.js";
-import problemRoute from './src/routes/ProblemRoutes.js'
-import userSubmissionRoute from './src/routes/UserSubmissionRoute.js'
-import connectDB from "./src/DB/connectDB.js";
+import authRoutes from "./routes/AuthRoutes.js";
+import problemRoute from './routes/ProblemRoutes.js'
+import userSubmissionRoute from './routes/UserSubmissionRoute.js'
+import connectDB from "./DB/connectDB.js";
 const __filename=fileURLToPath(import.meta.url);
 const __dirname=path.dirname(__filename);
 const app=express();
