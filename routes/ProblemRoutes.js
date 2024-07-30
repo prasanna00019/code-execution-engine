@@ -1,5 +1,5 @@
 import express from "express"
-import { addProblem, getProblemById, getProblems } from "../src/controllers/ProblemController.js";
+import { addProblem, getProblemById, getProblems } from "../controllers/ProblemController.js";
 const ProblemRouter=express.Router();
 ProblemRouter.post('/add',addProblem);
 ProblemRouter.get('/',getProblems);
