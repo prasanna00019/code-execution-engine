@@ -9,6 +9,7 @@ import userSubmissionRoute from './src/routes/UserSubmissionRoute.js'
 import connectDB from "./src/DB/connectDB.js";
 const app=express();
 const port =process.env.PORT|| 4000;
+connectDB();
 //middlewares
 app.use(express.json());
 app.use(cors())     //connect frontend to backend
@@ -21,5 +22,4 @@ app.get('/',(req,res)=>{
 })
 app.listen(port,()=>{
     console.log(`server started on ${port}`);
-    connectDB();
 })
