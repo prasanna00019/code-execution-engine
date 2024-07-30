@@ -1,6 +1,8 @@
 import express from "express"
 import cors from "cors"
 // import 'dotenv/config' 
+import cookieParser from "cookie-parser";
+
 import dotenv from "dotenv"
 dotenv.config();
 import path from "path"
@@ -15,6 +17,7 @@ const app=express();
 const port =process.env.PORT|| 4000;
 connectDB();
 //middlewares
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.static(path.join(__dirname,'/frontend/dist')))
 app.get('*',(req,res)=>res.sendFile(path.join(__dirname,'/frontend/dist/index.html')))
